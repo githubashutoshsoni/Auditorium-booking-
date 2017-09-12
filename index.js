@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config()
 const APIAI_TOKEN = process.env.APIAI_TOKEN;
 const APIAI_SESSION_ID = process.env.APIAI_SESSION_ID;
 
@@ -18,7 +19,7 @@ io.on('connection', function(socket){
   console.log('a user connected');
 });
 
-const apiai = require('apiai')("f21ac830af6f4e97b48e71bc8a262578");
+const apiai = require('apiai')(APIAI_TOKEN);
 
 // Web UI
 app.get('/', (req, res) => {
