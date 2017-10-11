@@ -1,8 +1,10 @@
 'use strict';
+const APIAI_TOKEN="f21ac830af6f4e97b48e71bc8a262578";
+const APIAI_SESSION_ID=123456789;
 
 require('dotenv').config()
-const APIAI_TOKEN = process.env.APIAI_TOKEN;
-const APIAI_SESSION_ID = process.env.APIAI_SESSION_ID;
+//const APIAI_TOKEN = process.env.APIAI_TOKEN;
+//const APIAI_SESSION_ID = process.env.APIAI_SESSION_ID;
 
 const express = require('express');
 const app = express();
